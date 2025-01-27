@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemali Altuntas - Researcher & Geomatics Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Cemali Altuntas</div>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <div class="image-slider">
+                    <div class="slider-container">
+                        <div class="slide fade">
+                            <img src="assets/images/home/slide1.jpg" alt="Research Image 1">
+                        </div>
+                        <div class="slide fade">
+                            <img src="assets/images/home/slide2.jpg" alt="Research Image 2">
+                        </div>
+                        <div class="slide fade">
+                            <img src="assets/images/home/slide3.jpg" alt="Research Image 3">
+                        </div>
+                        
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1)">❮</a>
+                        <a class="next" onclick="changeSlide(1)">❯</a>
+                        
+                        <!-- Dots/circles -->
+                        <div class="dots">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content">
+                    <h1>Welcome to My Academic Portfolio</h1>
+                    <p class="subtitle">Research Assistant in Geomatics Engineering</p>
+                    <p class="institution">Yildiz Technical University</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="assets/profile.png" alt="Cemali Altuntas">
+                    </div>
+                    <div class="bio">
+                        <p>I am a researcher specializing in GNSS Interferometric Reflectometry (GNSS-IR) and sea level studies. Since 2018, I have been serving as a Research Assistant in the Department of Geomatic Engineering at Yildiz Technical University. Currently, I am a visiting researcher at the National Oceanography Centre Liverpool, UK, where I focus on improving GNSS-IR sea level retrievals. My expertise includes developing software tools in MATLAB and Python for data analysis, and I integrate AI models in my research to enhance GNSS-IR techniques and their applications in environmental monitoring.</p>
+                        
+                        <div class="expertise-areas">
+                            <h3>Core Competencies:</h3>
+                            <ul>
+                                <li>GNSS Data Processing & Analysis</li>
+                                <li>Software Development (MATLAB, Python)</li>
+                                <li>AI Model Development</li>
+                                <li>Environmental Monitoring</li>
+                                <li>Sea Level Studies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <i class="fas fa-satellite"></i>
+                        <h3>GNSS Interferometric Reflectometry</h3>
+                        <p>Specializing in GNSS-IR techniques for environmental monitoring and sea level measurements, with a focus on improving retrieval methods.</p>
+                    </div>
+                    <div class="research-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Scientific Software Development</h3>
+                        <p>Development of specialized tools and algorithms for GNSS data processing using MATLAB and Python, focusing on efficiency and automation.</p>
+                    </div>
+                    <div class="research-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>GNSS-PPP</h3>
+                        <p>Research on Precise Point Positioning techniques, focusing on accuracy improvements and real-time applications.</p>
+                    </div>
+                    <div class="research-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Data Analysis & AI Applications</h3>
+                        <p>Integration of machine learning and AI techniques in GNSS data processing and environmental monitoring applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-content">
+                    <div class="main-project">
+                        <h3><i class="fas fa-globe"></i> OpenGNSSTools</h3>
+                        <p class="project-description">A platform dedicated to creating simple and practical web applications tailored for individuals working with GNSS data. Built with HTML, CSS, and JavaScript, our tools are designed to be lightweight, user-friendly, and accessible to everyone.</p>
+                        
+                        <div class="project-tools">
+                            <div class="tool-item">
+                                <h4><i class="fas fa-calendar"></i> GNSSCalendar</h4>
+                                <p>A user-friendly calendar tool that provides detailed GNSS time information, including Julian Day Numbers, GPS Week Numbers, and more, for any selected date.</p>
+                            </div>
+                            <div class="tool-item">
+                                <h4><i class="fas fa-satellite"></i> SatTrackView</h4>
+                                <p>An interactive web-based visualization tool for tracking GNSS satellites in real-time, displaying positions of GPS, GLONASS, Galileo, and BeiDou satellites on a world map.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/OpenGNSSTools" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> View Organization
+                            </a>
+                            <a href="http://opengnsstools.github.io" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Visit Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="other-projects">
+                        <h3>More Projects</h3>
+                        <p>Explore my other research projects and contributions on GitHub:</p>
+                        <div class="project-links">
+                            <a href="https://github.com/cemalialtuntas" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> View GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publications-content">
+                    <!-- SCI/SSCI/AHCI Publications -->
+                    <div class="publication-category">
+                        <h3><i class="fas fa-journal-whills"></i> SCI/SSCI/AHCI Indexed Journal Papers</h3>
+                        <div id="sci-publications" class="publication-list">
+                            <p class="loading">Loading publications...</p>
+                        </div>
+                    </div>
+
+                    <!-- Other Journal Papers -->
+                    <div class="publication-category">
+                        <h3><i class="fas fa-newspaper"></i> Other Journal Papers</h3>
+                        <div id="other-publications" class="publication-list">
+                            <p class="loading">Loading publications...</p>
+                        </div>
+                    </div>
+
+                    <!-- Conference Papers -->
+                    <div class="publication-category">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Conference Papers</h3>
+                        <div id="conference-publications" class="publication-list">
+                            <p class="loading">Loading publications...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="section">
+            <div class="container">
+                <h2>Tools & Resources</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fas fa-code"></i>
+                        <h3>GIRAS</h3>
+                        <p>GIRAS (GNSS-IR Analysis Software) is an open-source MATLAB-based software for GNSS-IR analysis. It can process multi-constellation GNSS signal data and estimate the SNR metrics for applications such as snow depth retrieval, effective reflector height estimation, and soil moisture monitoring.</p>
+                        <div class="tool-links">
+                            <a href="https://geodesy.noaa.gov/gps-toolbox/GIRAS.shtml" class="tool-link" target="_blank">
+                                <i class="fas fa-download"></i> Download Software & Sample Data
+                            </a>
+                            <a href="https://doi.org/10.1007/s10291-021-01201-3" class="tool-link" target="_blank">
+                                <i class="fas fa-book"></i> Read Publication
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add more tool cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <h2>Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <h3>Latest Developments in GNSS-IR</h3>
+                        <p class="post-meta">Posted on January 15, 2024</p>
+                        <p class="post-excerpt">Exploring recent advances in GNSS Interferometric Reflectometry...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                    <!-- Add more blog posts as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details">
+                                <p>Academic Email: <a href="mailto:cemali@yildiz.edu.tr">cemali@yildiz.edu.tr</a></p>
+                                <p>Personal Email: <a href="mailto:cemalialtuntas@gmail.com">cemalialtuntas@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-details">
+                                <p class="permanent-address">
+                                    <strong>Permanent Address:</strong><br>
+                                    Department of Geomatic Engineering<br>
+                                    Yildiz Technical University<br>
+                                    Istanbul, Turkey
+                                </p>
+                                <p class="visiting-address">
+                                    <strong>Visiting Address (Feb 2025 - Nov 2025):</strong><br>
+                                    National Oceanography Centre<br>
+                                    Liverpool, UK
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/cemali-altunta%C5%9F-a69904142/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/cemalialtuntas" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Cemali_Altuntas" target="_blank" title="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                            <a href="https://scholar.google.com.tr/citations?user=v8QuuYEAAAAJ" target="_blank" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cemali Altuntas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+</html> 
