@@ -135,13 +135,30 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--primary-color);
+        background-color: rgba(44, 62, 80, 0.95);
         flex-direction: column;
         padding: 1rem;
+        z-index: 1000;
     }
 
     .nav-menu.active {
         display: flex;
+    }
+
+    .nav-menu li {
+        padding: 0.5rem 0;
+    }
+
+    .nav-menu a {
+        color: var(--text-color);
+        display: block;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+
+    .nav-menu a:hover {
+        background-color: rgba(52, 152, 219, 0.2);
+        color: var(--secondary-color);
     }
 
     .about-content {
